@@ -74,4 +74,130 @@ Want to elevate the user experience?
 • 🧬 Add voice input with Azure Speech Services.
 • 📈 Log and monitor interactions for AI model finetuning.
 
+Here you go, Vladimir—a clean and responsive HTML/CSS React TypeScript frontend tailored to the UI you provided from DR.ROBOT on deepbody.me. This includes:
+
+• ✅ Drag-and-drop upload zone
+• ✅ Search bar
+• ✅ HIPAA & GDPR privacy notice
+• ✅ Branding & footer
+
+
+---
+
+🧬 React TS Frontend — DR.ROBOT UI
+
+`App.tsx`
+
+import React from 'react';
+import './App.css';
+
+const App: React.FC = () => {
+  return (
+    <div className="container">
+      <header>
+        <div className="logo">
+          <img src="/robot-logo.png" alt="DR.ROBOT" />
+          <h1>DR.ROBOT</h1>
+        </div>
+
+        <div className="search-bar">
+          <input type="text" placeholder="Search" />
+          <button>Search</button>
+        </div>
+
+        <div className="dropzone">
+          <img src="/upload-icon.png" alt="Upload" />
+          <p>Drag & drop your medical test or history files here for AI deep dive</p>
+        </div>
+
+        <div className="privacy">
+          <h2>HIPAA & GDPR PROTECTION</h2>
+          <p>
+            Your privacy is protected by <strong className="highlight">Trusted Execution Environment</strong> hosted by Honeypotz Inc.
+          </p>
+        </div>
+      </header>
+
+      <footer>
+        <p>deepbody.me</p>
+      </footer>
+    </div>
+  );
+};
+
+export default App;
+
+---
+
+`App.css`
+
+.container {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #101010;
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.search-bar {
+  margin: 20px 0;
+}
+
+.search-bar input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.dropzone {
+  border: 2px dashed #007bff;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.dropzone img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.privacy {
+  margin-top: 20px;
+}
+
+.highlight {
+  color: #66ff99;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+---
+
 
